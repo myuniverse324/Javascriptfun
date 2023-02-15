@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: lightpink;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 48px;
+        margin-top: 50px;
+      }
+      .proposal {
+        margin-top: 50px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px grey;
+      }
+      button {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: lightpink;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Will you be my forever and always?</h1>
+    <div class="proposal">
+      <p id="message">My dearest [girlfriend's name],</p>
+      <p id="question">I have loved you since the moment I met you, and I know in my heart that you are the one I want to spend the rest of my life with. Will you do me the honor of becoming my wife?</p>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+    <script>
+      let girlfriendName = prompt("What is your girlfriend's name?");
+      let message = document.getElementById("message");
+      message.innerHTML = "My dearest " + girlfriendName + ",";
+
+      let yesButton = document.getElementById("yes");
+      yesButton.addEventListener("click", function() {
+        alert("Oh, thank you so much for saying yes! I love you.");
+      });
+
+      let noButton = document.getElementById("no");
+      noButton.addEventListener("click", function() {
+        alert("Oh, I understand. Maybe we can talk about it more later.");
+      });
+    </script>
+  </body>
+</html>
